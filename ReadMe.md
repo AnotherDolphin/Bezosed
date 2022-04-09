@@ -18,7 +18,9 @@ POST `/reassign` to save user changes to a company's Bezos-related status
 ### Frontend: *React*
 - Lists all transactions and distinguishes Bezos related ones
 - Displays amount spent on Bezos and its % of total
+![bezos-ui](https://user-images.githubusercontent.com/46499432/162577455-fc2a2743-2054-4803-b647-0a416a2f584c.png)
 - Hover on transaction to view switch to change company's Bezos status
+- ![bezos-hover](https://user-images.githubusercontent.com/46499432/162577481-1e0eb966-a9ef-48a6-b56c-953fcc613a2a.png)
 - All components react to user changes and server updates
 
 ### USAGE
