@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  grid-column: span 2;
+}
+
+.App-header h1 {
+  margin: 0;
+  color: teal
+}
+
+.transactions, .total-div {
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-inline: 20%;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* align-items: center; */
+  /* align-items: flex-start; */
+}
+
+.transaction {
+  margin: 8px;
+  padding: 8px;
+  background: #92c2f3;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.transaction div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.transaction div *{
+  margin: 0;
+}
+
+.bezosed {
+  background: yellow;
+  position: relative;
+}
+
+.bezosed::before {
+  content: 'BESOZED';
+  position: absolute;
+  right: 100%;
+  top: 0;
+  transform: rotate(-90deg) translateX(-60%);
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.total-div h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #700;
+}
+
+.total-div p span {
+  font-weight: bold;
+  color: #700;
+  font-size: 1.2rem;
+  margin-inline: 5px;
+}
+
+.reassign {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  top: 0;
+  left: 0;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+
+}
+
+.transaction:hover .reassign {
+  opacity: 1;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.track {
+  position: relative;
+  height: 0.5rem;
+  width: 2rem;
+  border-radius: 5px;
+  background: #aaa;
+}
+
+.thumb {
+  position: absolute;
+  border-radius: 3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background: gray;
+  left: -0.5rem;
+  top: -0.5rem;
+}
+
+.bezosed .thumb {
+  background: blue;
+  left: 1rem;
+}
