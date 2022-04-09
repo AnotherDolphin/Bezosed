@@ -4,7 +4,7 @@ This web app prcossses personal transactions to determines the amount and % of B
 
 ## Implementaiton
 
-### Backend: *Node js*
+### Backend: *Node js* (/server)
 - **ES6** compliant with imports and top level awaits
 - **Express** powered server with CORS and application/JSON enabled
 - **Node-fetch** to get and check transaction API data
@@ -15,7 +15,7 @@ GET `/transactions` to send transactions data to frontend
 
 POST `/reassign` to save user changes to a company's Bezos-related status
 
-### Frontend: *React*
+### Frontend: *React* (/web-app)
 - Lists all transactions and distinguishes Bezos related ones
 - Displays amount spent on Bezos and its % of total
 ![bezos-ui](https://user-images.githubusercontent.com/46499432/162577455-fc2a2743-2054-4803-b647-0a416a2f584c.png)
@@ -25,7 +25,7 @@ POST `/reassign` to save user changes to a company's Bezos-related status
 
 ### USAGE
 
-Fork/clone the repository to a local directly
+Fork/clone the repository to a local directory
 
 Run `npm install` in both the **/server** and the **/webapp** directories to get all dependencies
 
